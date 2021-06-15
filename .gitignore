@@ -1,0 +1,11 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+node_modules
+build
+npm-debug.log
+.nyc
+.env
+.DS_Store
