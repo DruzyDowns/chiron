@@ -5,6 +5,32 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-body {
-  background-color: #fff;
+@layer utilities {
+  @variants group-focus, focus, group-hover, hover, responsive {
+    .glass {
+      background: rgba(17, 17, 17, 0.25);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(4.5px);
+      -webkit-backdrop-filter: blur(4.5px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    .border-glass {
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    .border-glass-bottom {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    .blur {
+      background: rgba(17, 17, 17, 0.25);
+      backdrop-filter: blur(4.5px);
+      -webkit-backdrop-filter: blur(4.5px);
+    }
+
+    .fog {
+      background-image: radial-gradient(
+        rgba(186, 137, 255, 0.5) 0%,
+        rgba(186, 137, 255, 0) 100%
+      );
+    }
+  }
 }
