@@ -3,11 +3,27 @@ layout: default
 title: "index"
 ---
 
-<div class="h-64 w-64 text-white flow glass flex justify-center p-4">
-  <p class="flow">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsa
-    commodi, aliquid magni veritatis laudantium quae rerum. Atque perferendis
-    numquam officia magnam voluptate vitae, ad soluta sapiente ratione, nostrum
-    expedita.
-  </p>
+<div class="flex w-full">
+  <div class="w-1/6 glass p-4">{% include sidebar.html %}</div>
+
+  <div class="w-5/6 relative p-8">
+    <div class="w-64 h-64 absolute">{% include blob.html %}</div>
+
+    <div class="glass absolute w-3/4 rounded-lg transform translate-x-6 p-4">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos,
+      dolorem incidunt sunt unde soluta, officiis ratione corrupti nesciunt
+      sint, adipisci est laborum provident illum ea non voluptatibus consectetur
+      maxime reiciendis! Lorem ipsum dolor sit, amet consectetur adipisicing
+      elit. Dignissimos, dolorem incidunt sunt unde soluta, officiis ratione
+      corrupti nesciunt sint, adipisci est laborum provident illum ea non
+      voluptatibus consectetur maxime reiciendis! Lorem ipsum dolor sit, amet
+      consectetur adipisicing elit. Dignissimos, dolorem incidunt sunt unde
+      soluta, officiis ratione corrupti nesciunt sint, adipisci est laborum
+      provident illum ea non voluptatibus consectetur maxime reiciendis! Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, dolorem
+      incidunt sunt unde soluta, officiis ratione corrupti nesciunt sint,
+      adipisci est laborum provident illum ea non voluptatibus consectetur
+      maxime reiciendis!
+    </div>
+  </div>
 </div>
