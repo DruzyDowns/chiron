@@ -3,3 +3,14 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "" # the name of your site, e.g. ACME Corp.
 plugins:
   - jekyll-postcss
+  - jekyll-datapage-generator
+
+page_gen-dirs: false
+
+page_gen:
+  - data: "slides"
+    template: "default"
+    dir: "slides"
+    name: "order"
+    title: "slide_title"
+    extension: ".html"

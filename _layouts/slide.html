@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    {% include meta.html %}
+  </head>
+  <body class="fog tuna">
+    <main>
+      <div class="flex w-full">
+  <div class="w-1/6 glass p-4 h-screen">{% include sidebar.html %}</div>
+  <div class="w-5/6 h-screen relative p-6">
+    <div class="glass rounded-lg h-full p-4">
+      <h1 class="work text-5xl">{{page.title}}</h1>
+      <p class="mont text-2xl">{{page.subtitle}}</p>
+    </div>
+  </div>
+</div>
+    </main>
+    {% include footer.html %}
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> 
+    <script src="{{ "/assets/js/transition.js" | relative_url }}"></script>
+  </body>
+</html>
+
+

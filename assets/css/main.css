@@ -21,13 +21,14 @@
     .mont {
       font-family: "Montserrat", sans-serif;
     }
-
+    .tuna {
+      color: #30323d;
+    }
     .glass {
       background: rgba(255, 255, 255, 0.25);
       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
       backdrop-filter: blur(4px);
       -webkit-backdrop-filter: blur(4px);
-      border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.18);
     }
     .border-glass {
@@ -47,5 +48,52 @@
         rgba(186, 137, 255, 0) 100%
       );
     }
+
+    .glow:after {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      height: 75%;
+      width: 100%;
+      margin: 0 auto;
+      transform: scale(0.9);
+      -webkit-filter: blur(15px);
+      filter: blur(15px);
+      background: linear-gradient(
+        to left,
+        #ff5770,
+        #e4428d,
+        #c42da8,
+        #9e16c3,
+        #6501de,
+        #9e16c3,
+        #c42da8,
+        #e4428d,
+        #ff5770
+      );
+      background-size: 200% 200%;
+      animation: animateGlow 15s linear infinite;
+    }
   }
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
 }
