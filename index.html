@@ -1,5 +1,12 @@
 ---
 layout: default
 title: "Overview"
-subtitle: "Slide subtitle goes here"
+subtitle: "Every axis is a brave declaration of wizardry with juxtaposed phantoms quickly gliding"
+static: true
 ---
+
+<ul>
+  {% for item in site.data.slides %}
+  <li>{{item.slide_title}}</li>
+  {% endfor %}
+</ul>

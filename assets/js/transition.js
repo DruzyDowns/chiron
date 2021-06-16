@@ -1,4 +1,6 @@
-const swup = new Swup();
+const swup = new Swup({
+  plugins: [new SwupSlideTheme({ reversed: true })],
+});
 
 function init() {
   let path = window.location.pathname.split("/")[2];

@@ -1,7 +1,10 @@
-<ul>
+<ul class="w-full px-4">
   {% for page in site.html_pages %}
   <a class="" href="{{page.url}}"
-    ><li class="nav-list work text-lg relative mb-6" data-path="{{page.url}}">
+    ><li
+      class="nav-list work font-bold uppercase text-xl relative mb-6"
+      data-path="{{page.url}}"
+    >
       <p>{{page.title}}</p>
     </li>
   </a>

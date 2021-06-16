@@ -2,7 +2,7 @@
   {
     "order": "1",
     "slide_title": "toyota ipsum",
-    "subtitle": "Slide subtitle goes here 1",
+    "subtitle": "Slide one subtitle goes here",
     "slug": "ipsum",
     "image": "image.png",
     "list": ["item one", "item two", "item three"]
@@ -10,7 +10,7 @@
   {
     "order": "2",
     "slide_title": "toyota tacoma",
-    "subtitle": "Slide subtitle goes here 2",
+    "subtitle": "Slide tw0 subtitle goes here",
     "slug": "hilux",
     "image": "image.png",
     "list": ["item one", "item two", "item three"]
@@ -18,7 +18,7 @@
   {
     "order": "3",
     "slide_title": "toyota hilux",
-    "subtitle": "Slide subtitle goes here 3",
+    "subtitle": "Slide three subtitle goes here",
     "slug": "hilux",
     "image": "image.png",
     "list": ["item one", "item two", "item three"]

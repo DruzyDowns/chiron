@@ -75,7 +75,7 @@
         #ff5770
       );
       background-size: 200% 200%;
-      animation: animateGlow 15s linear infinite;
+      animation: animateGlow 7s linear infinite;
     }
   }
 }
@@ -95,5 +95,5 @@
 }
 
 html.is-animating .transition-fade {
-  opacity: 0;
+  opacity: 1;
 }

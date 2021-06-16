@@ -6,23 +6,30 @@
   <body class="fog tuna">
     <main>
       <div class="flex w-full">
-      <div class="w-1/6 glass p-4 h-screen">{% include sidebar.html %}</div>
-      <div id="swup" class="transition-fade w-5/6 h-screen relative px-6 py-2">
-        <div class="glass rounded-lg h-full p-4">
-          <h1 class="work text-5xl">{{page.title}}</h1>
-          <p class="mont text-2xl">{{page.subtitle}}</p>
-          <ul>
+      <div class="glass w-80 p-4 h-screen">{% include sidebar.html %}</div>
+      <div id="swup" class="transition-fade w-full h-screen relative px-6 py-2">
+        <div class="glass rounded-lg w-full h-full p-4">
+          <div class="mb-12">
+            <h1 class="work text-2xl uppercase underline mb-4">{{page.title}}</h1>
+            <p class="work text-4xl w-3/4">{{page.subtitle}}</p>
+          </div>
+          <div class="flex">
+            <ul class="mont">
             {% for item in page.list %}
-            <li>{{item}}</li>
+            <li class="text-xl">{{item}}</li>
             {% endfor %}
-          </ul>
-          {{content}}
+            </ul>
+          </div>
+          {% if page.static == true %}
+            {{content}}
+          {% endif %}
         </div>
       </div>
       </div>
     </main>
     {% include footer.html %}
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> 
+    <script src="{{ "/assets/js/swup.min.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/SwupSlideTheme.min.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/transition.js" | relative_url }}"></script>
   </body>
 </html>
