@@ -75,7 +75,7 @@
         #ff5770
       );
       background-size: 200% 200%;
-      animation: animateGlow 7s linear infinite;
+      animation: animateGlow 5s linear infinite;
     }
   }
 }

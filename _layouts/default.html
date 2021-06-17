@@ -5,24 +5,28 @@
   </head>
   <body class="fog tuna">
     <main>
-      <div class="flex w-full">
+      <div class="flex w-full relative">
       <div class="glass w-80 p-4 h-screen">{% include sidebar.html %}</div>
-      <div id="swup" class="transition-fade w-full h-screen relative px-6 py-2">
+      <div id="swup" class="transition-fade w-full h-screen relative px-6 py-2 pr-2">
         <div class="glass rounded-lg w-full h-full p-4">
-          <div class="mb-12">
-            <h1 class="work text-2xl uppercase underline mb-4">{{page.title}}</h1>
+          <div class="flex"> 
+            <ul class="mont w-full list-disc pl-4">
+              <img class="rounded-lg shadow-md float-right ml-6 mt-14 {{page.image_width}}" src="/assets/img/{{page.image}}" alt="">
+              <h1 class="work text-2xl uppercase underline mb-4">{{page.title}}</h1>
             <p class="work text-4xl w-3/4">{{page.subtitle}}</p>
+            {% if page.static == true %}
+              <ul class="mont w-full list-disc pl-4">
+              {% for item in site.data.slides %}
+                <li class="text-2xl mt-8">{{item.slide_title}}</li>
+              {% endfor %}
+              </ul> 
+              {% else %}
+              {% for item in page.list %}
+              <li class="text-2xl mt-8">{{item}}</li>
+              {% endfor %}
+              {% endif %}
+            </ul>      
           </div>
-          <div class="flex">
-            <ul class="mont">
-            {% for item in page.list %}
-            <li class="text-xl">{{item}}</li>
-            {% endfor %}
-            </ul>
-          </div>
-          {% if page.static == true %}
-            {{content}}
-          {% endif %}
         </div>
       </div>
       </div>

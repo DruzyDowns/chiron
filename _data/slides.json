@@ -4,15 +4,21 @@
     "slide_title": "toyota ipsum",
     "subtitle": "Slide one subtitle goes here",
     "slug": "ipsum",
-    "image": "image.png",
-    "list": ["item one", "item two", "item three"]
+    "image": "atrium.png",
+    "image_width": "w-1/2",
+    "list": [
+      "The Toyota Ipsum, Picnic, SportsVan or Avensis Verso is a seven-seater multi-purpose vehicle produced by the Japanese automaker Toyota from 1995 to 2009.",
+      "The Ipsum, like many Toyota products, was shared as a trio of the Toyota Gaia, and sold only at Japanese Toyota dealerships called Toyota Store, next to the Toyota Carina.",
+      "The Gaia was unique to Toyopet Store locations, and the Toyota Nadia was sold at Toyota Corolla Store."
+    ]
   },
   {
     "order": "2",
     "slide_title": "toyota tacoma",
-    "subtitle": "Slide tw0 subtitle goes here",
+    "subtitle": "Slide two subtitle goes here",
     "slug": "hilux",
-    "image": "image.png",
+    "image": "arch.png",
+    "image_width": "w-1/2",
     "list": ["item one", "item two", "item three"]
   },
   {
@@ -20,7 +26,8 @@
     "slide_title": "toyota hilux",
     "subtitle": "Slide three subtitle goes here",
     "slug": "hilux",
-    "image": "image.png",
+    "image": "street.png",
+    "image_width": "w-1/2",
     "list": ["item one", "item two", "item three"]
   }
 ]
