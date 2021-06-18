@@ -6,7 +6,7 @@
   <body class="fog tuna">
     <main>
       <div class="flex w-full relative">
-      <div class="glass w-80 p-4 h-screen">{% include sidebar.html %}</div>
+      <div class="w-80 p-4 h-screen">{% include sidebar.html %}</div>
       <div id="swup" class="transition-fade w-full h-screen relative px-6 py-2 pr-2">
         <div class="glass rounded-lg w-full h-full p-4">
           <div class="flex"> 
@@ -15,14 +15,14 @@
               <h1 class="work text-2xl uppercase underline mb-4">{{page.title}}</h1>
             <p class="work text-4xl w-3/4">{{page.subtitle}}</p>
             {% if page.static == true %}
-              <ul class="mont w-full list-disc pl-4">
+              <ol class="mont w-full list-decimal uppercase tracking-widest pl-4">
               {% for item in site.data.slides %}
-                <li class="text-2xl mt-8">{{item.slide_title}}</li>
+                <li class="text-xl leading-loose mt-8">{{item.slide_title}}</li>
               {% endfor %}
-              </ul> 
+              </ol> 
               {% else %}
               {% for item in page.list %}
-              <li class="text-2xl mt-8">{{item}}</li>
+              <li class="text-xl leading-loose mt-8">{{item}}</li>
               {% endfor %}
               {% endif %}
             </ul>      

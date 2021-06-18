@@ -1,0 +1,28 @@
+<div id="controls" class="">
+  {% assign val = {{page.url }} | split: "/" %} {% assign slide_number = val |
+  slice: 2 %}
+
+  <p>{{ page.next.url }}</p>
+  <div class="controls w-full flex justify-between items-center">
+    <a id="start" href="/">
+      <div class="w-12 relative hover:glow rounded-full">
+        {% include chevron_double_left.html %}
+      </div>
+    </a>
+    <a id="previous" href="">
+      <div class="w-16 relative hover:glow rounded-full">
+        {% include chevron_left.html %}
+      </div>
+    </a>
+    <a id="next" href="">
+      <div class="w-16 relative hover:glow rounded-full">
+        {% include chevron_right.html %}
+      </div>
+    </a>
+    <a id="end" href="">
+      <div class="w-12 relative hover:glow rounded-full">
+        {% include chevron_double_right.html %}
+      </div>
+    </a>
+  </div>
+</div>
