@@ -50,7 +50,19 @@ function init() {
       listItem.classList.remove("glow");
     }
   });
+
+  document.addEventListener("keyup", checkKeyPressed, false);
+
+  function checkKeyPressed(evt) {
+    if (evt.keyCode == 37) {
+      previous.click();
+    } else if (evt.keyCode == 39) {
+      next.click();
+    } else {
+    }
+  }
 }
+
 init();
 
 // this event runs for every page view after initial load
